@@ -1,6 +1,6 @@
 ---
 name: Other Issue
-about: A blank issue template
+about: Other Issue
 title: ''
 labels: ''
 assignees: ''
