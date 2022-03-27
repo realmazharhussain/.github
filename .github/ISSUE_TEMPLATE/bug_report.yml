@@ -1,12 +1,12 @@
 name: Bug Report
 description: Report a bug
-title: "[Bug] "
+title: "[BUG] "
 labels: ["bug"]
 body:
   - type: markdown
     attributes:
       value: |
-        Thanks for taking the time to fill out this bug report!
+        # Thanks for taking the time to fill out this bug report!
   - type: textarea
     id: what-happend
     attributes:
@@ -35,14 +35,34 @@ body:
       description: Explain the problem in detail
     validations:
       required: false
+  - type: input
+    attributes:
+      label: Program Version
+    validations:
+      required: true
+  - type: dropdown
+    attributes:
+      label: Source
+      description: How did you get this software?
+      options:
+        - Flatpak
+        - AppImage
+        - Snap
+        - Distro's Repositories
+        - Arch User Repository
+        - Source Code
+    validations:
+      required: true
   - type: textarea
     attributes:
       label: Environment
       description: |
         examples:
-          - **OS**: Ubuntu 20.04
+          - OS: Ubuntu 22.04
+          - DE: GNOME 41.3
       value: |
-          - OS:
+          - OS: 
+          - DE: 
       render: markdown
     validations:
       required: true
