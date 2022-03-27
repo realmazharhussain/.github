@@ -1,6 +1,6 @@
 ---
 name: Other Issue
-about: Other Issue
+about: Report another type of issue
 title: ''
 labels: ''
 assignees: ''
