@@ -10,6 +10,7 @@ body:
   - type: textarea
     id: what-happend
     attributes:
+      render: markdown
       label: What happened?
       description: Describe concisely
     validations:
@@ -17,6 +18,7 @@ body:
   - type: textarea
     id: expected-behavior
     attributes:
+      render: markdown
       label: Expected behavior
       description: What was supposed to happen?
     validations:
@@ -24,6 +26,7 @@ body:
   - type: textarea
     id: how-to-reproduce
     attributes:
+      render: markdown
       label: To Reproduce
       description: Steps to reproduce the behavior
     validations:
@@ -31,6 +34,7 @@ body:
   - type: textarea
     id: explaination
     attributes:
+      render: markdown
       label: Detailed Explaination (Optional)
       description: Explain the problem in detail
     validations:
@@ -40,22 +44,27 @@ body:
       label: Program Version
     validations:
       required: true
-  - type: dropdown
+  - type: input
     attributes:
       label: Source
-      description: How did you get this software?
-      options:
+      render: markdown
+      description: |
+        How did you get this software?
+
+        Examples:
         - Flatpak
         - AppImage
         - Snap
+        - AUR
+        - RPM Fusion
         - Distro's Repositories
-        - Arch User Repository
         - Source Code
     validations:
       required: true
   - type: textarea
     attributes:
       label: Environment
+      render: markdown
       description: |
         examples:
           - OS: Ubuntu 22.04
