@@ -47,7 +47,6 @@ body:
   - type: input
     attributes:
       label: Source
-      render: markdown
       description: |
         How did you get this software?
 
