@@ -71,6 +71,5 @@ body:
       value: |
           - OS: 
           - DE: 
-      render: markdown
     validations:
       required: true
